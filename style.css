@@ -1,0 +1,77 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #606c38;
+    color:#fff;
+}
+
+/* Hide menu by default on mobile */
+#menu{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 350px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    gap: 20px;
+    list-style: none; /* removes bullet points */
+}
+#menu li a {
+    text-decoration: none; /* removes underline */
+    color: #fefae0;           /* optional: sets link color */
+    padding: 8px 12px;     /* optional: add spacing for easier touch/click */
+    border-radius: 5px;    /* optional: round edges for hover effect */
+    transition: all 0.3s ease; /* smooth transition */
+}
+
+/* Optional: add hover effect */
+#menu li a:hover {
+    background-color: #283618; /* background color on hover */
+    color: #fff;               /* text color on hover */
+    transform: scale(1.05);    /* slight scale effect */
+}
+
+#menu.show{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    border-radius: 5px;
+    padding: 10px;
+}
+/* Hamburger button hidden on desktop */
+#hamburger{
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/* Mobile styling */
+@media (max-width: 768px) {
+    #humberger {
+        display: block;
+    }
+     #menu{
+        display: none; /* hide menu initially */
+        flex-direction: column;
+        gap: 10px;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    #menu.show{
+        display: flex; /* show menu when toggled */
+        flex-direction: column;
+    }
+}
