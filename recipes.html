@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Recipes</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="img/coffee-machine.png"></div>
+        <div>
+        <nav>
+            <button id="hamburger" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars" style="color: #fff;"></i>
+            </button>
+            <ul id="menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#about-us" class="nav-link">About us</a></li>
+                <li class="nav-item"><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="index.html#opening-hours" class="nav-link">Opening Hours</a></li>
+                <li class="nav-item"><a href="index.html#Recipes" class="nav-link">Recipes</a></li>
+
+            </ul>
+        </nav>
+        </div>
+
+    </header>
+    <main>
+    <h2 class="title">Our Menu</h2>
+    <!-- filter buttons -->
+     <div class="btn-container">
+      <button class="filter-btn" type="button" data-id="all">All</button>
+      <button class="filter-btn" type="button" data-id="Breakfast">Breakfast</button>
+      <button class="filter-btn" type="button" data-id="Lunch">Lunch</button>
+      <button class="filter-btn" type="button" data-id="Beverages">Beverages</button>
+      <button class="filter-btn" type="button" data-id="Dessert">Dessert</button>
+
+      </div>
+
+    <!-- filter buttons ens-->
+    <div class="section-center">
+            <!--single item-->
+           <article class="menu-item">
+          <img src="img/menu-item.jpeg" alt="menu item" class="photo" />
+          <div class="item-info">
+            <div>
+              <h4>buttermilk pancakes</h4>
+              <h4 class="price">$15</h4>
+            </div>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+              laboriosam excepturi! Quo, officia.
+            </p>
+          </div>
+        </article>
+            <!--end of single item-->
+    </div>
+</main>
+    <footer>
+        <p>&copy; 2025 Sahar Coffee Shop. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+
+
+    </footer>
+        <script src="script.js"></script>
+
+  </body>
+</html>

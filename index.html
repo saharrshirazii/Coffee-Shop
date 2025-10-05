@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <title>hamburger menu </title>
 </head>
 <body>
     <header>
-        <h2>Sahar Coffe Shop</h2>
+        <div class="logo"><img src="img/coffee-machine.png"></div>
+        <div>
         <nav>
             <button id="hamburger" aria-label="Toggle Menu">
                 <i class="fa-solid fa-bars" style="color: #fff;"></i>
             </button>
             <ul id="menu">
                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#about-us" class="nav-link">About us</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#opening-hours" class="nav-link">Opening Hours</a></li>
+                <li class="nav-item"><a href="recipes.html" class="nav-link">recipes</a></li>
+
             </ul>
         </nav>
+        </div>
 
     </header>
     <main>
@@ -28,22 +33,45 @@
          <section style="height: 100vh;">
             <div class="hero-image">
             <div class="hero-text">
-            <h1 style="font-size:50px;">Enjoy your life</h1>
-            <p>If you want to drink a cup of hot coffee come to our branches. For more information about our plans click on following button:</p>
+            <h1 style="font-size:50px;">Enjoy your Coffee</h1>
+            <p>If you want to drink a cup of hot coffee come to our branches.
+                it's the best coffee in town. Every morning fresh coffee is ready for you.
+                <br/>  
+                For more information about our plans click on following button:</p>
             <button>Click here</button>
             </div>
             </div>
          </section>
 
             <!-- about us-->
-             <section class="about-us">
-             <h2>About us</h2>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis excepturi ad nesciunt, facilis minima beatae odit nobis vero nam harum tempore, repellendus, sunt soluta incidunt dolor ullam ut in?</p>
-             </section>
+            <section id="about-us">
+  <div class="about-us-grid">
+    <div class="about-us-text">
+      <h2>About us</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero consequuntur dolore sunt veniam
+        pariatur cumque commodi molestias eum optio accusantium deserunt eos facilis, sequi quaerat inventore
+        eligendi quidem! Dolores, minima quas atque nisi voluptatibus praesentium dignissimos perferendis
+        ullam tenetur, maxime ex iusto necessitatibus vero sit, sunt sapiente itaque earum.Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Voluptas blanditiis excepturi ad nesciunt, facilis minima beatae
+        odit nobis vero nam harum tempore, repellendus, sunt soluta incidunt dolor ullam ut in?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam non assumenda dolore odio, aspernatur,
+        officiis nostrum quas aliquam ad a beatae quisquam nesciunt nobis ratione pariatur iusto accusamus
+        voluptas ut temporibus laborum quis quae perspiciatis quidem! Voluptatibus exercitationem molestiae
+        quisquam maiores nihil unde sapiente commodi necessitatibus eveniet, accusamus esse voluptas deleniti
+        soluta eum porro aliquid. Placeat eius, fuga reprehenderit expedita dolore fugit tenetur maiores
+        adipisci commodi illum atque. Maxime odio, adipisci eligendi laboriosam quia eum exercitationem ad
+        porro a beatae modi mollitia architecto voluptates iste quaerat dolores nihil, alias voluptatem,
+        aliquam aut incidunt animi! Ratione at maxime unde alias deleniti?</p>
+    </div>
+    <div class="about-us-image">
+      <img src="img/about-us.jpg" alt="About Us" />
+    </div>
+  </div>
+</section>
 
             <!-- gallery-->
-             <section class="gallery">
-                <h2>Gallery</h2>
+             <section id="gallery">
+                <h2>Our Gallery</h2>
                 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="img/gallery-01.jpg">
@@ -83,12 +111,34 @@
 <div class="clearfix"></div>
              </section>
 
-             <!-- open times-->
+             <!-- open hours-->
+              <section id="opening-hours">
+                <h2>Open Hours</h2>
+                <!--<ul>
+                    <li>Monday: 8am - 8pm</li>
+                    <li>Tuesday: 8am - 8pm</li>
+                    <li>Wednesday: 8am - 8pm</li>
+                    <li>Thursday: 8am - 10pm</li>
+                    <li>Friday: 8am - 10pm</li>
+                    <li>Saturday: 9am - 11pm</li>
+                    <li>Sunday: Closed</li>
+                </ul>-->
+                <img src="img/opening hours.gif" type="video/mp4"/>
+              </section>
+
         
     </main>
     <footer>
+        <p>&copy; 2025 Sahar Coffee Shop. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
 
     </footer>
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+
+  </body>
 </html>
